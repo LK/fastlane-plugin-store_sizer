@@ -20,8 +20,7 @@ module Fastlane
         command << " -exportOptionsPlist \"#{export_options_plist_path}\""
         command << " -archivePath \"#{archive_path}\""
         command << " -exportPath \"#{export_path}\""
-        puts(command)
-        FastlaneCore::CommandExecutor.execute(command: command, print_command: false, print_all: false)
+        FastlaneCore::CommandExecutor.execute(command: command, print_command: true, print_all: true)
       end
     end
   end
